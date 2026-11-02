@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#10151c">
+<title>서형의 iPhone</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+:root{font-family:"Gowun Dodum","Apple SD Gothic Neo","Noto Sans KR",sans-serif;color:#fff;font-synthesis:none}*{box-sizing:border-box}body{margin:0;width:100%;height:100%;min-height:100dvh;background:#202b36}button{font:inherit;color:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent}button:focus-visible{outline:2px solid #fff;outline-offset:3px}.phone{position:relative;width:100%;height:100dvh;height:100svh;min-height:0;overflow:hidden;background:#202b36;isolation:isolate}.wallpaper{position:absolute;inset:0;background:radial-gradient(ellipse at 72% 16%,#73879a88,transparent 43%),radial-gradient(ellipse at 15% 78%,#324b5d,transparent 53%),linear-gradient(155deg,#1c2936,#405263 52%,#18242d);z-index:-2}.wallpaper:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#0003,transparent 45%,#0005)}.screen{position:absolute;inset:0;display:none;flex-direction:column}.screen.active{display:flex}.status{height:58px;padding:16px 27px 0;display:flex;align-items:flex-start;justify-content:space-between;font-size:14px;font-weight:400;position:relative;z-index:5}.status .right{display:flex;gap:7px;align-items:center}.signal{height:13px;display:inline-flex;align-items:flex-end;gap:2px;margin-right:2px}.signal i{display:block;width:3px;background:#fff;border-radius:1px}.signal i:nth-child(1){height:4px}.signal i:nth-child(2){height:7px}.signal i:nth-child(3){height:10px}.signal i:nth-child(4){height:13px}.battery{width:23px;height:12px;border:1.5px solid white;border-radius:4px;position:relative;padding:2px}.battery:after{content:"";position:absolute;right:-4px;top:3px;width:2px;height:4px;background:#fff8;border-radius:2px}.battery i{display:block;background:#fff;width:82%;height:100%;border-radius:1px}.lock{align-items:center;text-align:center;cursor:pointer}.lock>.status{width:100%;flex-shrink:0}.lock>.home-indicator{flex-shrink:0}.lock-date{margin-top:49px;font-size:20px;font-weight:500}.lock-time{font-family:"Gowun Dodum","Arial Rounded MT Bold",sans-serif;font-size:clamp(75px,22vw,102px);font-weight:400;letter-spacing:-4px;line-height:1.15}.notices{width:100%;margin-top:auto;padding:0 20px 14px;display:grid;gap:9px}.notice{background:#dce4e9b8;backdrop-filter:blur(18px);border-radius:17px;color:#1e2731;padding:12px 14px;text-align:left}.notice-head{display:flex;align-items:center;gap:7px;font-size:12px;font-weight:400}.notice-head small{margin-left:auto;color:#52606a;font-weight:500}.notice p{font-size:13px;margin:6px 0 0;line-height:1.45}.notice-icon{display:inline-grid;place-items:center;width:22px;height:22px;border-radius:6px;background:#f9e34b;font-size:13px}.notice-icon.cal{background:white}.unlock-hint{font-size:13px;margin:8px 0 18px;opacity:.9;animation:breathe 2s infinite}@keyframes breathe{50%{opacity:.45}}.home-indicator{width:126px;height:5px;border-radius:5px;background:#fff;align-self:center;margin:0 auto 9px;flex-shrink:0;z-index:5}.pass{align-items:center;text-align:center;background:#101b25b5;backdrop-filter:blur(22px)}.pass-title{margin-top:0;font-size:20px;font-weight:500}.pass-sub{font-size:13px;opacity:.75;margin-top:8px}.dots{display:flex;gap:19px;margin:24px 0 28px}.dot{width:13px;height:13px;border:1.5px solid #fff;border-radius:50%}.dot.filled{background:white}.keypad{width:min(310px,90%);margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:13px 25px}.key{width:72px;height:72px;border:0;border-radius:50%;background:#ffffff30;backdrop-filter:blur(8px);font-size:29px;font-weight:300;justify-self:center}.key:active{background:#ffffff65}.key.empty{visibility:hidden}.key.action{font-size:13px;background:transparent}.error{color:#ffc3c3;min-height:20px;font-size:12px;margin-top:-13px}.home{padding-bottom:0}.home-body{flex:1;min-height:0;display:flex;flex-direction:column;padding:46px 22px 0}.home-title{display:none}.folders{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:25px 14px}.folder-tile{background:none;border:0;display:flex;flex-direction:column;align-items:center;gap:9px;padding:0}.folder-preview{width:82px;height:82px;aspect-ratio:1;border-radius:19px;background:#ffffff4c;backdrop-filter:blur(18px);display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:repeat(3,minmax(0,1fr));gap:5px;padding:9px;box-shadow:0 4px 16px #0002;flex:none;overflow:hidden}.mini{min-width:0;min-height:0;aspect-ratio:1;border-radius:5px;background:#fff8;display:grid;place-items:center;font-size:clamp(10px,2.7vw,14px);line-height:1;overflow:hidden}.folder-label{font-size:12px;text-shadow:0 1px 5px #0006}.dock{margin:0 16px 16px;padding:13px 9px;border-radius:27px;background:#ffffff43;backdrop-filter:blur(18px);display:flex;justify-content:space-around;gap:4px}.app-button{background:none;border:0;display:flex;flex-direction:column;align-items:center;gap:6px;padding:0;min-width:60px}.app-icon{width:59px;height:59px;border-radius:15px;display:grid;place-items:center;font-size:29px;box-shadow:0 3px 12px #0002;background:#fff;color:#111}.app-icon{font-weight:400}.app-icon.shop-icon{color:#fff}.app-name{font-size:11px;white-space:nowrap;text-shadow:0 1px 5px #0007}.dock .app-name{display:none}.overlay{position:absolute;inset:0;z-index:10;background:#0c1724b5;backdrop-filter:blur(22px);display:none;flex-direction:column}.overlay.show{display:flex}.overlay-top{padding:68px 24px 18px;display:flex;justify-content:space-between;align-items:center}.overlay-title{font-size:23px;font-weight:400}.close{border:0;background:#ffffff2a;border-radius:20px;padding:7px 14px;font-size:13px}.folder-apps{display:grid;grid-template-columns:repeat(3,1fr);gap:28px 8px;padding:35px 20px}.app-view{background:#f5f6f8;color:#20252d}.app-view .overlay-top{background:#fff;padding-bottom:18px}.app-view .close{background:#e9edf1;color:#333}.app-content{margin:auto;padding:25px;text-align:center}.app-content .big{font-size:62px}.app-content p{color:#7b828d;line-height:1.6;font-size:14px}.app-view .home-indicator{background:#222}.folder-view .home-indicator{margin-top:auto}@media(min-width:700px){.home-body{padding-left:clamp(24px,7vw,110px);padding-right:clamp(24px,7vw,110px)}.folders{grid-template-columns:repeat(3,110px);gap:35px}.dock{width:min(440px,calc(100% - 32px));margin-left:auto;margin-right:auto}.notices{max-width:520px;margin-left:auto;margin-right:auto}}@media(max-height:700px){.lock-date{margin-top:25px}.pass-title{margin-top:0}.keypad{gap:6px 22px}.key{height:62px;width:62px}.home-body{padding-top:15px}.folders{gap:16px}.folder-preview{width:72px;height:72px}}
+/* 암호 화면의 상태바를 다른 화면과 동일하게 화면 좌우에 고정 */
+.pass>.status{width:100%;align-self:stretch;flex:0 0 58px;}
+.pass-center{width:100%;flex:1;min-height:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:12px 0 20px;}
+.pass .dots{flex-shrink:0;margin:22px 0 24px;}
+.pass .error{margin:0 0 14px;flex-shrink:0;}
+.pass .keypad{flex-shrink:0;}
+.pass .pass-sub{font-size:14px;opacity:.85;margin-top:9px;}
+.pass .home-indicator{flex:0 0 5px;}
+@media(max-height:650px){.pass-center{justify-content:flex-start;padding-top:5px;overflow-y:auto}.pass .dots{margin:12px 0}.pass .error{margin-bottom:6px}.pass .keypad{gap:5px 18px}.pass .key{width:54px;height:54px;font-size:24px}}
+
+/* SNS — 일반 피드에서 프로필 사진을 눌러 @s.hxng으로 이동 */
+.app-view.sns-mode{background:#fff;color:#151515}
+.app-view.sns-mode .overlay-top{display:none}
+.app-view.sns-mode .app-content{margin:0;padding:0;text-align:left;flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain}
+.sns-header{height:54px;padding:0 16px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #eee;background:#fff;position:sticky;top:0;z-index:2}
+.sns-logo{font-size:25px;font-weight:600;letter-spacing:-1.5px}
+.sns-head-actions{display:flex;gap:16px;font-size:22px}
+.sns-back{border:0;background:none;color:#151515;font-size:23px;padding:4px 12px 4px 0}
+.sns-scroll{background:white;min-height:100%}
+.sns-stories{display:flex;gap:16px;overflow-x:auto;padding:15px 14px 12px;border-bottom:1px solid #f0f0f0;scrollbar-width:none}
+.sns-stories::-webkit-scrollbar{display:none}
+.sns-story{border:0;background:none;color:#222;display:flex;align-items:center;gap:5px;flex-direction:column;min-width:69px;font-size:11px;padding:0}
+.sns-avatar{width:42px;height:42px;border-radius:50%;background:linear-gradient(145deg,#e7e7e7,#b8c0c9);display:grid;place-items:center;color:#59616b;font-size:17px;font-weight:600;flex-shrink:0}
+.sns-story .sns-avatar{width:64px;height:64px;border:3px solid #d887b2;outline:2px solid #fff;box-shadow:0 0 0 2px #d887b2}
+.sns-post{border-bottom:1px solid #eee;padding-bottom:13px}
+.sns-post-head{display:flex;align-items:center;gap:10px;padding:11px 13px}
+.sns-user{font-size:13px;font-weight:700}
+.sns-location{font-size:11px;color:#777}
+.sns-more{margin-left:auto;font-size:20px}
+.sns-post-media{width:100%;aspect-ratio:1/1;background:linear-gradient(135deg,#e7e9ed,#c9d0d8);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;color:#818995}
+.sns-post-media span{font-size:30px}
+.sns-post-media small{font-size:12px}
+.sns-post-actions{display:flex;gap:17px;font-size:24px;padding:9px 13px}
+.sns-post-actions .sns-save{margin-left:auto}
+.sns-caption{padding:0 13px;font-size:13px;line-height:1.6}
+.sns-caption b{margin-right:6px}
+.sns-muted{color:#8c8c8c;font-size:12px;padding:5px 13px}
+.sns-nav{position:sticky;bottom:0;background:#fff;border-top:1px solid #eee;display:flex;align-items:center;justify-content:space-around;height:57px;z-index:3}
+.sns-nav button{border:0;background:none;color:#151515;font-size:23px;min-width:46px;height:46px;display:grid;place-items:center}
+.sns-nav .sns-avatar{width:27px;height:27px;font-size:12px}
+.sns-profile-head{display:flex;align-items:center;gap:20px;padding:21px 17px}
+.sns-profile-head .sns-avatar{width:85px;height:85px;font-size:30px}
+.sns-stats{display:flex;justify-content:space-around;flex:1;text-align:center;gap:7px}
+.sns-stats b{display:block;font-size:16px}
+.sns-stats small{font-size:12px}
+.sns-bio{padding:0 17px 15px;font-size:13px;line-height:1.65}
+.sns-profile-buttons{display:flex;gap:8px;padding:0 15px 20px}
+.sns-profile-buttons button{flex:1;border:0;border-radius:9px;background:#eef0f3;color:#222;padding:9px;font-size:13px}
+.sns-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px}
+.sns-grid-cell{aspect-ratio:1;background:linear-gradient(145deg,#e2e5e9,#c4cbd4);display:grid;place-items:center;color:#89919a;font-size:22px}
+.sns-close{font-size:13px!important;width:auto!important;padding:0 10px!important}
+</style>
+</head>
+<body>
+<main class="phone" aria-label="이서형의 휴대폰">
+<div class="wallpaper"></div>
+<section class="screen lock active" id="lock" aria-label="잠금화면">
+ <div class="status"><span id="lockStatusTime">9:41</span><span class="right"><span class="signal" aria-label="셀룰러 신호"><i></i><i></i><i></i><i></i></span><b>5G</b> <span class="battery"><i></i></span></span></div>
+ <div class="lock-date" id="lockDate"></div><div class="lock-time" id="lockTime">9:41</div>
+ <div class="notices"><div class="notice"><div class="notice-head"><span class="notice-icon">💬</span>메신저<small>지금</small></div><p><b>서형이팬클럽(4)</b><br>임재민: 야 다들 뭐하냐 ㅋㅋ</p></div><div class="notice"><div class="notice-head"><span class="notice-icon cal">📅</span>캘린더<small>오늘</small></div><p><b>오늘의 일정</b><br>캘린더를 확인하세요.</p></div></div>
+ <div class="unlock-hint">화면을 탭하여 잠금해제</div><div class="home-indicator"></div>
+</section>
+<section class="screen pass" id="pass" aria-label="암호 입력">
+ <div class="status"><span id="passStatusTime">9:41</span><span class="right"><span class="signal" aria-label="셀룰러 신호"><i></i><i></i><i></i><i></i></span><b>5G</b> <span class="battery"><i></i></span></span></div>
+ <div class="pass-center"><div class="pass-title">암호 입력</div><div class="pass-sub">내 생일</div>
+ <div class="dots" id="dots"><i class="dot"></i><i class="dot"></i><i class="dot"></i><i class="dot"></i></div><div class="error" id="error" aria-live="polite"></div>
+ <div class="keypad" id="keypad"></div></div><div class="home-indicator"></div>
+</section>
+<section class="screen home" id="home" aria-label="홈 화면">
+ <div class="status"><span id="homeStatusTime">9:41</span><span class="right"><span class="signal" aria-label="셀룰러 신호"><i></i><i></i><i></i><i></i></span><b>5G</b> <span class="battery"><i></i></span></span></div>
+ <div class="home-body"><div class="folders" id="folders"></div></div>
+ <div class="dock" id="dock"></div><div class="home-indicator"></div>
+</section>
+<section class="overlay folder-view" id="folderOverlay" aria-label="앱 폴더"><div class="overlay-top"><span class="overlay-title" id="folderTitle"></span><button class="close" id="closeFolder">닫기 ✕</button></div><div class="folder-apps" id="folderApps"></div><div class="home-indicator"></div></section>
+<section class="overlay app-view" id="appOverlay" aria-label="앱 화면"><div class="overlay-top"><span class="overlay-title" id="appTitle"></span><button class="close" id="closeApp">완료 ✕</button></div><div class="app-content"><div class="big" id="appBig"></div><h2 id="appHeading"></h2><p>이 앱의 콘텐츠는 다음 단계에서 연결할 예정이야.</p></div><div class="home-indicator"></div></section>
+</main>
+<script>
+// ★ 생일이 확정되면 아래 0000을 월일(MMDD)로 변경하세요. 예: 8월 15일 → 0815
+const BIRTHDAY_CODE = '0000';
+const apps = {
+ clock:['시계','◷','#e9edf2'],calculator:['계산기','%','#e9edf2'],notes:['메모','▤','#e9edf2'],calendar:['캘린더','▦','#e9edf2'],music:['음악','♫','#e9edf2'],weather:['날씨','☁','#e9edf2'],settings:['설정','⚙','#e9edf2'],camera:['카메라','◎','#e9edf2'],gallery:['사진','◐','#e9edf2'],instagram:['SNS','📸','#d75ca7'],browser:['인터넷','E','#e9edf2'],kakao:['메신저','💬','#ffe34d'],bank:['은행','₩','#e9edf2'],musinsa:['쇼핑','👖','#1d2026'],kream:['리셀','👟','#f5f5f5'],baemin:['배달','🛵','#37c2b4'],phone:['전화','☎','#e9edf2'],messages:['문자','✉','#e9edf2'],mail:['메일','@','#e9edf2']
+};
+const groups=[{name:'기본 앱',ids:['clock','weather','settings','calculator','notes','calendar','music']},{name:'사진 · SNS',ids:['camera','gallery','messages','browser','kakao','instagram']},{name:'쇼핑 · 금융',ids:['musinsa','kream','baemin','bank']}];
+const $=id=>document.getElementById(id);let entered='',currentScreen='lock',lastFolder=null;
+function showScreen(id){['lock','pass','home'].forEach(s=>$(s).classList.toggle('active',s===id));currentScreen=id;}
+function formatClock(d){return `${d.getHours()}:${String(d.getMinutes()).padStart(2,'0')}`;}
+function updateClock(){const d=new Date();const time=formatClock(d);['lockStatusTime','passStatusTime','homeStatusTime','lockTime'].forEach(id=>$(id).textContent=time);$('lockDate').textContent=new Intl.DateTimeFormat('ko-KR',{month:'long',day:'numeric',weekday:'long'}).format(d);}
+updateClock();setInterval(updateClock,15000);
+$('lock').addEventListener('click',()=>{entered='';updateDots();$('error').textContent='';showScreen('pass');});
+function updateDots(){[...$('dots').children].forEach((dot,i)=>dot.classList.toggle('filled',i<entered.length));}
+function digit(n){if(currentScreen!=='pass'||entered.length>=4)return;entered+=n;updateDots();$('error').textContent='';if(entered.length===4){setTimeout(()=>{if(entered===BIRTHDAY_CODE){showScreen('home');}else{$('error').textContent='암호가 올바르지 않습니다.';entered='';updateDots();}},220);}}
+function erase(){entered=entered.slice(0,-1);updateDots();$('error').textContent='';}
+['1','2','3','4','5','6','7','8','9','','0','삭제'].forEach(v=>{const b=document.createElement('button');b.className='key'+(!v?' empty':'')+(v==='삭제'?' action':'');b.textContent=v;b.type='button';if(v)b.onclick=()=>v==='삭제'?erase():digit(v);$('keypad').append(b);});
+document.addEventListener('keydown',e=>{if(currentScreen==='pass'){if(/^\d$/.test(e.key))digit(e.key);if(e.key==='Backspace')erase();}if(e.key==='Escape'){closeApp();closeFolder();}});
+function appButton(id){const [name,emoji,color]=apps[id];const b=document.createElement('button');b.type='button';b.className='app-button';b.innerHTML=`<span class="app-icon ${id==='musinsa'?'shop-icon':''}" style="background:${color}">${emoji}</span><span class="app-name">${name}</span>`;b.onclick=()=>openApp(id);return b;}
+function openFolder(g){lastFolder=g;$('folderTitle').textContent=g.name;$('folderApps').replaceChildren(...g.ids.map(appButton));$('folderOverlay').classList.add('show');}
+function closeFolder(){$('folderOverlay').classList.remove('show');}
+function openApp(id){
+ const [name,emoji]=apps[id];
+ $('appTitle').textContent=name;$('appHeading').textContent=name;$('appBig').textContent=emoji;
+ $('appOverlay').classList.add('show');
+ if(id==='instagram'){openSNS('feed');}else{
+  $('appOverlay').classList.remove('sns-mode');
+  $('appOverlay').querySelector('.overlay-top').style.display='';
+  $('appOverlay').querySelector('.app-content').innerHTML=`<div class="big">${emoji}</div><h2>${name}</h2><p>이 앱의 콘텐츠는 다음 단계에서 연결할 예정이야.</p>`;
+ }
+}
+function closeApp(){
+ $('appOverlay').classList.remove('show','sns-mode');
+ $('appOverlay').querySelector('.overlay-top').style.display='';
+}
+function avatar(label='S'){return `<span class="sns-avatar">${label}</span>`;}
+function snsNav(){return `<nav class="sns-nav"><button onclick="openSNS('feed')" aria-label="피드">⌂</button><button aria-label="검색">⌕</button><button aria-label="게시물 추가">⊞</button><button aria-label="활동">♡</button><button onclick="openSNS('profile')" aria-label="서형 프로필">${avatar('S')}</button><button class="sns-close" onclick="closeApp()">종료</button></nav>`;}
+function openSNS(page){
+ const o=$('appOverlay');o.classList.add('sns-mode');
+ const c=o.querySelector('.app-content');
+ if(page==='profile'){
+ c.innerHTML=`<div class="sns-scroll">
+ <header class="sns-header"><button class="sns-back" onclick="openSNS('feed')">‹</button><strong>@s.hxng</strong><span class="sns-head-actions">☰</span></header>
+ <div class="sns-profile-head"><div>${avatar('S')}</div><div class="sns-stats"><div><b>9</b><small>게시물</small></div><div><b>—</b><small>팔로워</small></div><div><b>—</b><small>팔로잉</small></div></div></div>
+ <div class="sns-bio"><b>이서형</b><br>Fashion · Beauty · Daily<br>Seoul, KR<br><span style="color:#888">사진과 소개는 추후 추가 예정</span></div>
+ <div class="sns-profile-buttons"><button>프로필 공유</button><button>연락하기</button></div>
+ <div class="sns-grid">${Array.from({length:9},(_,i)=>`<div class="sns-grid-cell" aria-label="게시물 이미지 자리 ${i+1}">▧</div>`).join('')}</div>
+ </div>${snsNav()}`;
+ }else{
+ c.innerHTML=`<div class="sns-scroll">
+ <header class="sns-header"><span class="sns-logo">SNS</span><span class="sns-head-actions">♡　✉</span></header>
+ <div class="sns-stories"><button class="sns-story" onclick="openSNS('profile')">${avatar('S')}<span>내 스토리</span></button>${['J','M','W','+'].map((v,i)=>`<div class="sns-story">${avatar(v)}<span>${['jaemin','mingyu','juwon','더 보기'][i]}</span></div>`).join('')}</div>
+ ${[1,2,3].map((n)=>`<article class="sns-post"><div class="sns-post-head"><button style="border:0;background:none;padding:0" onclick="openSNS('profile')" aria-label="서형 프로필 보기">${avatar('S')}</button><div><div class="sns-user" onclick="openSNS('profile')" style="cursor:pointer">@s.hxng</div><div class="sns-location">Seoul</div></div><span class="sns-more">⋯</span></div>
+ <div class="sns-post-media"><span>▧</span><small>게시물 사진 ${n} · 이미지 추가 예정</small></div>
+ <div class="sns-post-actions"><span>♡</span><span>♧</span><span>➤</span><span class="sns-save">▢</span></div>
+ <div class="sns-caption"><b>@s.hxng</b>${['오늘의 기록.','그냥, 요즘.','주말 ☕'][n-1]}</div><div class="sns-muted">댓글 모두 보기 · 방금 전</div></article>`).join('')}
+ </div>${snsNav()}`;
+ }
+ c.scrollTop=0;
+}
+
+$('closeFolder').onclick=closeFolder;$('closeApp').onclick=closeApp;
+groups.forEach(g=>{const b=document.createElement('button');b.className='folder-tile';b.type='button';const p=document.createElement('span');p.className='folder-preview';g.ids.slice(0,9).forEach(id=>{const mini=document.createElement('span');mini.className='mini';mini.textContent=apps[id][1];p.append(mini);});const label=document.createElement('span');label.className='folder-label';label.textContent=g.name;b.append(p,label);b.onclick=()=>openFolder(g);$('folders').append(b);});
+['phone','messages','mail','kakao'].forEach(id=>$('dock').append(appButton(id)));
+</script>
+</body>
+</html>
